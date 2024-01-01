@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">BMI calculator</a>
+        </div>
+      </nav>
+    
+      <div class="container mt-4">
+        <h1>BMI Calculator</h1>
+        <form id="bmiForm">
+            <input type="number" name="weight" placeholder="Input weight">
+            <input type="number" name="height" placeholder="Input height">
+            <input type="number" name="age" placeholder="Input age">
+            <p class="mt-3">Choose gender</p>
+            <select name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <p></p>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div id="result" class="mt-4">
+          <h3>Results</h3>
+          <p id="bmiValue">BMI: </p>
+          <p id="interpretation">Interpretation: </p>
+        </div>
+      </div>
+
+      <footer class="footer mt-5">
+        <div class="container text-center">
+          <p>Yelena Lebedinskaya, SE-2205</p>
+        </div>
+      </footer>
+    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="bmi/bmicalculator.js"></script>
+    
+</body>
+</html>
